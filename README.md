@@ -1,6 +1,6 @@
 
 
-# _ng5-i18n-multilingual_ Angular5 internationalization sample
+# _ng5-i18n-multilingual_ Angular5 multilingual site sample
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 
@@ -138,7 +138,7 @@ npm run build:ja
 npm run build:fr
 ```
 
-## Copy site data to your own server
+## Upload the site data to your own server
 
 If you compilation is successful, you will find `dist` directory in your project root directory.
 
@@ -167,8 +167,13 @@ _Video Explanation(Japanese)_
 - "Internationalization (I18N) Japanese Translation by mixplace in Qiita",
 <https://qiita.com/mixplace/items/3f1e1190e38c14f5297d>
 
+## PR
+
 - "Angular5 Custom Library: The definitive, step-by-step guide", 
 <https://www.udemy.com/1461368/learn/v4/content>
+
+- Discount coupon
+<https://www.udemy.com/angular5-custom-library-the-definitive-step-by-step-guide/?couponCode=CUSTLIB-EN-20180713>
 
 
 ## Change Log
