@@ -96,7 +96,16 @@ And you will get the page below in your browser by accessing **http://localhost:
  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/ng5-i18n-multilingual/ng5-i18n-multilingual_fr_initial_page01.png" width= "640" >
 
 
-## How to make multilingual site date
+## How to make multilingual site data
+
+### Modify package.json file
+
+When using the above local server, dynamic language change is not possible.
+On the actual site, you can change the language based on the URL.
+
+To prepare for this, you need to change BaseUrl for each language. It must be set with parameters at build time as follows.
+
+The URL is  changed for each language.
 
 ```bash
 
@@ -105,8 +114,43 @@ And you will get the page below in your browser by accessing **http://localhost:
     "build:fr": "ng build --aot --output-path dist/fr --base-href /ng5-i18n-multilingual/fr/ --i18nFile=src/locale/messages.fr.xlf --i18nFormat=xlf --locale=fr"
 
 ```
+```bash
+Default   /ng5-i18n-multilingual/
+Japanese  /ng5-i18n-multilingual/ja/
+French    /ng5-i18n-multilingual/fr/
+```
 
+Here we are adding "/ng5-i18n-multilingual" because we use GitHub Pages as the execution result of this program, so we need to add its own repository name.
 
+If you are using your own site, adding such a string is not necessary.
+
+### How to build multilingual site data
+
+At first, you need to change base-href string based on your own site. Change the string `/ng5-i18n-multilingual` to your own string (or null).
+
+#### Compile
+
+Next you need to compile as follows.
+
+```bash
+npm run build
+npm run build:ja
+npm run build:fr
+```
+
+## Copy site data to your own server
+
+If you compilation is successful, you will find `dist` directory in your project root directory.
+
+You need to upload all the files and directories under `dist` directory to your own server.
+
+In more details, please watch the following video.
+
+_Video Explanation(English)_
+<https://youtu.be/74OCrD6Ckgg>
+
+_Video Explanation(Japanese)_
+<https://youtu.be/AUXpQvqGjeA>
 
 ## Version
 
@@ -129,7 +173,7 @@ And you will get the page below in your browser by accessing **http://localhost:
 
 ## Change Log
 
- - 2018.5.4 version 0.1 uploaded
+ - 2018.5.4 version 0.2 uploaded
 
 ## Copyright
 
