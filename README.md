@@ -53,8 +53,9 @@ $ cd ng5-i18n-multilingual
 $ npm install 
 ```
 
+## Check by local server
 
-#### Start English (default) version
+### Start English (default) version
 
 
 ```bash
@@ -64,11 +65,11 @@ And you will get the page below in your browser by accessing **http://localhost:
 
   - ***First Page*** 
 
-  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/ng5-i18n-demo/ng5-i18n-demo_en-page_01.png" width= "640" >
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/ng5-i18n-multilingual/ng5-i18n-multilingual_en_initial_page01.png" width= "640" >
 
 
 
-### Start other language (Japanese) version 
+### Start Japanese version 
 Start the local server as follows. 
 
 ```bash
@@ -79,7 +80,31 @@ And you will get the page below in your browser by accessing **http://localhost:
 
   - ***First Page*** 
 
-  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/ng5-i18n-demo/ng5-i18n-demo_ja-page_01.png" width= "640" >
+ <img src="https://raw.githubusercontent.com/Ohtsu/images/master/ng5-i18n-multilingual/ng5-i18n-multilingual_ja_initial_page01.png" width= "640" >
+
+### Start French version 
+Start the local server as follows. 
+
+```bash
+$ npm run start:ja
+```
+
+And you will get the page below in your browser by accessing **http://localhost:4200**.  
+
+  - ***First Page*** 
+
+ <img src="https://raw.githubusercontent.com/Ohtsu/images/master/ng5-i18n-multilingual/ng5-i18n-multilingual_fr_initial_page01.png" width= "640" >
+
+
+## How to make multilingual site date
+
+```bash
+
+    "build": "ng build --aot --output-path dist/ --base-href /ng5-i18n-multilingual/",
+    "build:ja": "ng build --aot --output-path dist/ja --base-href /ng5-i18n-multilingual/ja/ --i18nFile=src/locale/messages.ja.xlf --i18nFormat=xlf --locale=ja",
+    "build:fr": "ng build --aot --output-path dist/fr --base-href /ng5-i18n-multilingual/fr/ --i18nFile=src/locale/messages.fr.xlf --i18nFormat=xlf --locale=fr"
+
+```
 
 
 
