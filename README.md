@@ -13,10 +13,10 @@ _Video Explanation(Japanese)_
 <https://youtu.be/AUXpQvqGjeA>
 
 _Demo Site_
-https://ohtsu.github.io/ng5-i18n-multilingual/
+<https://ohtsu.github.io/ng5-i18n-multilingual/>
 
 _Full Source Code_
-https://github.com/Ohtsu/ng5-i18n-multilingual.git
+<https://github.com/Ohtsu/ng5-i18n-multilingual.git>
 
 ## Overview 
    - _ng5-i18n-multilingual_ is a sample program for making multilingual sites by Angular5.
