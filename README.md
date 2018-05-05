@@ -86,7 +86,7 @@ And you will get the page below in your browser by accessing **http://localhost:
 Start the local server as follows. 
 
 ```bash
-$ npm run start:ja
+$ npm run start:fr
 ```
 
 And you will get the page below in your browser by accessing **http://localhost:4200**.  
@@ -103,7 +103,7 @@ And you will get the page below in your browser by accessing **http://localhost:
 When using the above local server, dynamic language change is not possible.
 On the actual site, you can change the language based on the URL.
 
-To prepare for this, you need to change BaseUrl for each language. It must be set with parameters at build time as follows.
+To prepare for this, you need to change **Base href** for each language. It must be set with parameters at build time as follows.
 
 The URL is  changed for each language.
 
@@ -167,7 +167,7 @@ _Video Explanation(Japanese)_
 - "Internationalization (I18N) Japanese Translation by mixplace in Qiita",
 <https://qiita.com/mixplace/items/3f1e1190e38c14f5297d>
 
-## PR
+## Others
 
 - "Angular5 Custom Library: The definitive, step-by-step guide", 
 <https://www.udemy.com/1461368/learn/v4/content>
